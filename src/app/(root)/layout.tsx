@@ -30,12 +30,15 @@ export default function RootLayout({
     
   
   return (
-    <ConnectionProvider endpoint={endpoint}>
+    <div className='bg-slate-900 '>
+          <ConnectionProvider endpoint={endpoint} >
         <WalletProvider wallets={wallets} autoConnect>
             <WalletModalProvider>
                 {children}
             </WalletModalProvider>
         </WalletProvider>
     </ConnectionProvider>
+    </div>
+
   );
 }

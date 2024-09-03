@@ -1,31 +1,38 @@
 "use client";
-import {
-    WalletDisconnectButton,
-    WalletMultiButton
-} from '@solana/wallet-adapter-react-ui';
-import { useWallet } from '@solana/wallet-adapter-react';
-import Form from '@/components/Form';
+
+import {Formpage} from '@/components/Form';
 import Demo from '@/components/Demo'
+import { Button } from '@/components/ui/button';
+import Appbar from '@/components/Appbar';
+import { CreateMintForm } from '@/components/CreateMint';
+import { BalanceDisplay } from '@/components/Balance';
+import { CreateTokenAccountForm } from '@/components/CreateATA';
+import { MintToForm } from '@/components/MintToken';
+import { FetchAssociatedTokens } from '@/components/Tokens';
 
 export default function Home() {
-  const { publicKey } = useWallet(); // Get publicKey from useWallet hook
 
   return (
     <div>
-      <WalletMultiButton />
 
      
-      {publicKey ? (
-        <div>
-          <p>Your public key is:</p>
-          <p>{publicKey.toString()}</p> 
-        </div>
-      ) : (
-        <p>No wallet connected</p>
-      )}
+      <Appbar/>
+            
 
-      {/* <Form/> */}
-      <Demo/>
+<BalanceDisplay/>
+<FetchAssociatedTokens/>
+<CreateMintForm/>
+<CreateTokenAccountForm/>
+<MintToForm/>
+       {/* <div>
+       <Formpage/>
+       </div> */}
+      
+      {/* <Demo/> */}
+     
+ <div className='text-white'>
+ </div>
+ {/* <img src="https://v2.akord.com/public/vaults/active/T7tIjhW2N4kIckHefDPtB1qnnRMd09sFHyRWt5nVzDY/gallery#2db7d1c3-135d-4ceb-abda-deaecfa698bb" alt="adn" /> */}
 
     </div>
   );
