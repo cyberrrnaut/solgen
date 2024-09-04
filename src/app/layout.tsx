@@ -17,7 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en"  className="bg-slate-900" >
-              <link rel="icon" href="public/favicon.ico" />
 
       <body className={inter.className}>{children}</body>
     </html>

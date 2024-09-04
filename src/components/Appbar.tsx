@@ -18,14 +18,7 @@ export default function Appbar() {
 
 
 <div>
-{/* {publicKey ? (
-        <div>
-          <p>Your public key is:</p>
-          <p className='text-white'>{publicKey.toString()}</p> 
-        </div>
-      ) : (
-        <p className='text-white'>No wallet connected</p>
-      )} */}
+
 
 <WalletMultiButton />
 </div>

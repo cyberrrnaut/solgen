@@ -1,7 +1,7 @@
 "use client"  // to make root a client component we create a sub layout as primary layout cant be a client component
 
 
-import React, { FC, useEffect, useMemo } from 'react';
+import React, { FC, useEffect, useMemo, useState } from 'react';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
@@ -16,11 +16,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    
-    const network = WalletAdapterNetwork.Devnet;
+
+  const network = WalletAdapterNetwork.Mainnet;
     
     // You can also provide a custom RPC endpoint.
-    const endpoint = "https://solana-devnet.g.alchemy.com/v2/UIw0HFD_vv2S3gV4a1vpHypPbfQb97FC";
+    const endpoint = "https://solana-mainnet.g.alchemy.com/v2/UIw0HFD_vv2S3gV4a1vpHypPbfQb97FC";
     
 
     const wallets = useMemo(
