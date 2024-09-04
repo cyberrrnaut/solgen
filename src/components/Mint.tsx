@@ -189,7 +189,7 @@ export const Mint: FC = () => {
                       type="number"
                       onChange={(e) => setDecimal(Number(e.target.value))}
                       placeholder="Eg: 6     [MIN-0 | MAX-9]"
-                    />
+                    className="bg-slate-800 border-none" />
                   </FormControl>
                   <FormDescription>
                     Eg: 0.000001 (Smallest unit of your token if Decimal is 6)
@@ -223,7 +223,7 @@ export const Mint: FC = () => {
       {atatxSig && (
         <div className="p-4 ">
           <Input
-          className="border-none bg-slate-900"
+            className="bg-slate-800 border-none" 
             placeholder="Enter Supply"
             type="number"
             onChange={(e) => setSupply(Number(e.target.value))}
