@@ -19,7 +19,7 @@ export default function Appbar() {
 
 <div>
 
-
+<input placeholder="siuuu"></input>
 <WalletMultiButton />
 </div>
 
