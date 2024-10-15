@@ -13,7 +13,7 @@ pnpm dev
 # or
 bun dev
 ```
-
+wsesewfew
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Cloudflare integration
