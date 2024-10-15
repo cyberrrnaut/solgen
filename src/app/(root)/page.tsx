@@ -41,7 +41,7 @@ export default function Page() {
                         
                     ) : (
                         <div className="text-2xl mt-10 ">
-                        Please connect your wallet.
+                        connect your wallet.
                         </div>
 
                         
