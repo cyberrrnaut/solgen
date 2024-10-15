@@ -95,7 +95,7 @@ export default function Page() {
             </div>
             </>
          ): <div className="text-2xl mt-10 ">
-Please connect your wallet.
+Please connect wallet.
 </div>
            }
             
