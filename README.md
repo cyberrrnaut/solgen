@@ -3,16 +3,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https:
 ## Getting Started
 
 First, run the development server:
-
+wwdw
 ```bash
 npm run dev
 # or
-yarn dev
+yarn devwc
 # or
 pnpm dev
 # or
 bun dev
-```
+```svcscev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
